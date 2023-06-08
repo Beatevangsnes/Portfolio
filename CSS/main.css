@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "magnify";
+  src: url(/CSS/fonts/Magnify-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(800deg, rgb(5, 124, 172), rgb(199, 10, 114));
+  font-family: "magnify";
+  z-index: -1;
+}
+
+
+#up {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(43, 247, 202, 0.5));
+  filter: blur(80px);
+  animation: down 40s infinite;
+  z-index: -1;
+}
+
+#down {
+  position: absolute;
+  right: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg, rgb(245, 287, 82, 0.8), rgb(199, 10, 114));
+  filter: blur(80px);
+  animation: up 40s infinite;
+  z-index: -1;
+}
+
+#left {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(183, 253, 52, 0.8));
+  filter: blur(80px);
+  animation: left 40s infinite;
+  z-index: -1;
+}
+
+#right {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(80deg, rgb(26, 248, 18, 0.6), rgb(199, 10, 52, 0.8));
+  filter: blur(80px);
+  animation: right 40s infinite;
+  z-index: -1;
+}
+
+@keyframes down {
+  0%, 100%{
+    top: -100px;
+  }
+  70% {
+    top: 700px;
+  }
+}
+
+@keyframes up {
+  0%, 100%{
+    bottom: -100px;
+  }
+  70% {
+    bottom: 700px;
+  }
+}
+
+@keyframes right {
+  0%, 100%{
+    right: -100px;
+  }
+  70% {
+    right: 1300px;
+  }
+}
+
+@keyframes left {
+  0%, 100%{
+    left: -100px;
+  }
+  70% {
+    left: 1300px;
+  }
+}
+
+
+@media (max-width: 950px) {
+
+  #up {
+    height: 100px;
+    width: 100px;
+  }
+
+  #down {
+    height: 100px;
+    width: 100px;
+  }
+
+  #left {
+    height: 200px;
+    width: 200px;
+  }
+
+  #right {
+    height: 200px;
+    width: 200px;
+  }
+
+}
