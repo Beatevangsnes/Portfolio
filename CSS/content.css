@@ -226,12 +226,13 @@ main {
   justify-content: space-between;
 }
 
-.percentage {
-  font-weight: bold;
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.description {
+  color: black;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
 
 @media (max-width: 1150px) {
   .dashboard {
@@ -277,13 +278,13 @@ main {
   }
 
 
-
   .footer-links a {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 28px;
     color: black;
   }
+
 
   .nav-list ul {
     display: flex;
